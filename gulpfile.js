@@ -43,7 +43,6 @@ var config = {
     server: {
         baseDir: './'
     },
-    tunnel: 'pex',
     host: 'localhost',
     port: 9000,
     logPrefix: 'Frontend_Devil'
@@ -75,12 +74,12 @@ gulp.task('style', function() {
         .pipe(plumber())
         .pipe(sass({errLogToConsole: true}))
         .pipe(prefixer())
+        .pipe(sourcemaps.write('./'))
+        .pipe(gulp.dest(path.build.css))
         .pipe(cssmin())
         .pipe(rename({
             suffix: '.min'
         }))
-        .pipe(gulp.dest(path.build.css))
-        .pipe(sourcemaps.write('./'))
         .pipe(gulp.dest(path.build.css))
         .pipe(reload({stream: true}));
 });
