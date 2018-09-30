@@ -52,7 +52,7 @@ gulp.task('html', function() {
     gulp.src(path.src.html)
         .pipe(rigger())
         .pipe(nunjucks({
-            searchPaths: ["template"]
+            searchPaths: ["src"]
         }))
         .pipe(gulp.dest(path.build.html))
         .pipe(reload({stream: true}));
