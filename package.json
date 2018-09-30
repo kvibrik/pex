@@ -20,5 +20,8 @@
     "gulp-uglify": "^3.0.1",
     "gulp-watch": "4.3.1",
     "rimraf": "^2.6.2"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.0"
   }
 }
