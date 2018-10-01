@@ -1,5 +1,12 @@
 // variables
-$bg: #000;
+
 
 //mixins
 
+@mixin center {
+  margin: 0 auto;
+}
+
+@mixin box {
+  box-sizing: border-box;
+}

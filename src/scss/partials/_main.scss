@@ -1,2 +1,13 @@
 @import 'var';
 
+html,
+body {
+  height: 100%;
+}
+
+.container {
+  @include center;
+  @include box;
+  max-width: 1180px;
+  padding: 0 10px;
+}
