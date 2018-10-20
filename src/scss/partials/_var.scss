@@ -10,3 +10,8 @@
 @mixin box {
   box-sizing: border-box;
 }
+
+@mixin openSans {
+  font-family: "Open Sans", sans-serif;
+  
+}

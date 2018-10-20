@@ -62,7 +62,7 @@ gulp.task('js', function(){
     gulp.src(path.src.js)
         .pipe(rigger())
         .pipe(sourcemaps.init())
-        .pipe(uglify())//сжимаем наш js
+        .pipe(uglify())
         .pipe(sourcemaps.write('./'))
         .pipe(gulp.dest(path.build.js))
         .pipe(reload({stream: true}));
@@ -76,11 +76,11 @@ gulp.task('style', function() {
         .pipe(prefixer())
         .pipe(sourcemaps.write('./'))
         .pipe(gulp.dest(path.build.css))
-        .pipe(cssmin())
-        .pipe(rename({
-            suffix: '.min'
-        }))
-        .pipe(gulp.dest(path.build.css))
+        // .pipe(cssmin())
+        // .pipe(rename({
+        //     suffix: '.min'
+        // }))
+        // .pipe(gulp.dest(path.build.css))
         .pipe(reload({stream: true}));
 });
 
