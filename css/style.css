@@ -310,6 +310,24 @@ body {
   max-width: 1180px;
   padding: 0 10px; }
 
+.button {
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  font: inherit;
+  width: 240px;
+  height: 60px;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.4);
+  border-radius: 30px;
+  color: #fff;
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin-top: 50px; }
+  .button_velvet {
+    background-color: #8824cd; }
+    .button_velvet:hover {
+      background-color: #9027d9; }
+
 .header {
   height: 100%;
   background: url("../img/header_bg.jpg") no-repeat 50% 50%;
@@ -386,5 +404,20 @@ body {
       width: 14px;
       height: 14px;
       background-image: url("../img/fa-search.png"); }
+  .header__bottom {
+    max-width: 520px;
+    width: 100%;
+    text-align: right;
+    margin-top: 275px;
+    color: #fff;
+    font-weight: 400; }
+  .header__title {
+    font-size: 3.125rem;
+    line-height: 4.375rem; }
+  .header__text {
+    max-width: 230px;
+    height: 13px;
+    overflow: hidden;
+    font-size: 12px; }
 
 /*# sourceMappingURL=style.css.map */

@@ -13,3 +13,26 @@ body {
   max-width: 1180px;
   padding: 0 10px;
 }
+
+.button {
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  font: inherit;
+  width: 240px;
+  height: 60px;
+  @include butShadow;
+  border-radius: 30px;
+  color: $white;
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin-top: 50px;
+
+  &_velvet {
+    background-color: $velvet;
+
+    &:hover {
+      background-color: lighten($velvet, 3%);
+    }
+  }
+}

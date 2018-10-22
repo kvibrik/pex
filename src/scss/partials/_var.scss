@@ -1,6 +1,8 @@
 // variables
 
 $gray: #626262;
+$white: #fff;
+$velvet: #8824cd;
 
 //mixins
 
@@ -14,5 +16,9 @@ $gray: #626262;
 
 @mixin openSans {
   font-family: "Open Sans", sans-serif;
+}
 
+@mixin butShadow {
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.4);
 }

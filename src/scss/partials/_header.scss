@@ -95,4 +95,25 @@
       background-image: url("../img/fa-search.png");
     }
   }
+
+  &__bottom {
+    max-width: 520px;
+    width: 100%;
+    text-align: right;
+    margin-top: 275px;
+    color: $white;
+    font-weight: 400;
+  }
+
+  &__title {
+    font-size: 3.125rem;
+    line-height: 4.375rem;
+  }
+
+  &__text {
+    max-width: 230px;
+    height: 13px;
+    overflow: hidden;
+    font-size: 12px;
+  }
 }
