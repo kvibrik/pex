@@ -301,7 +301,8 @@ template {
 html,
 body {
   height: 100%;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif; }
 
 .container {
   margin: 0 auto;
@@ -374,8 +375,7 @@ body {
       line-height: 4.625;
       padding: 0 30px;
       color: #626262;
-      box-sizing: border-box;
-      font-family: "Open Sans", sans-serif; }
+      box-sizing: border-box; }
     .header__search:after {
       content: "";
       position: absolute;

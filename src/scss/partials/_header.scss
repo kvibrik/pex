@@ -82,7 +82,6 @@
       padding: 0 30px;
       color: $gray;
       @include box;
-      @include openSans;
     }
 
     &:after {

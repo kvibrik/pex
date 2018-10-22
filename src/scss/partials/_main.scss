@@ -3,7 +3,8 @@
 html,
 body {
   height: 100%;
-  box-sizing: border-box;
+  @include box;
+  @include openSans;
 }
 
 .container {
