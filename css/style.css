@@ -315,7 +315,7 @@ body {
   cursor: pointer;
   padding: 0;
   font: inherit;
-  width: 240px;
+  width: 280px;
   height: 60px;
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.4);
   border-radius: 30px;
@@ -323,6 +323,8 @@ body {
   font-size: 1.125rem;
   font-weight: 700;
   margin-top: 50px; }
+  .button:focus {
+    outline: none; }
   .button_velvet {
     background-color: #8824cd; }
     .button_velvet:hover {
@@ -414,10 +416,15 @@ body {
   .header__title {
     font-size: 3.125rem;
     line-height: 4.375rem; }
+  .header__info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; }
   .header__text {
     max-width: 230px;
     height: 13px;
     overflow: hidden;
-    font-size: 12px; }
+    font-size: 12px;
+    margin: 18px 25px 0 0; }
 
 /*# sourceMappingURL=style.css.map */
