@@ -26,7 +26,6 @@ body {
   color: $white;
   font-size: 1.125rem;
   font-weight: 700;
-  margin-top: 50px;
 
   &:focus {
     outline: none;
@@ -38,5 +37,20 @@ body {
     &:hover {
       background-color: lighten($velvet, 3%);
     }
+  }
+
+  &_white {
+    background-color: $white;
+    color: $buttonPink;
+    position: relative;
+    z-index: 30;
+  }
+
+  &-header {
+    margin-top: 50px;
+  }
+
+  &-pink {
+    margin: 15px 0;
   }
 }
