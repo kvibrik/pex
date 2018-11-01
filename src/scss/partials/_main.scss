@@ -54,3 +54,17 @@ body {
     margin: 15px 0;
   }
 }
+
+.info-button {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.text_small {
+  max-width: 230px;
+  height: 13px;
+  overflow: hidden;
+  font-size: 12px;
+  margin: 18px 25px 0 0;
+}
