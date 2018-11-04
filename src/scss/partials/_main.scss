@@ -12,6 +12,7 @@ body {
   @include box;
   max-width: 1180px;
   padding: 0 10px;
+  width: 100%;
 }
 
 .button {
@@ -53,6 +54,17 @@ body {
 
   &-pink {
     margin: 15px 0;
+  }
+
+  &_small {
+    max-width: 135px;
+    height: 35px;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 18px;
+    font-size: 0.813rem;
+    font-weight: 400;
+    box-shadow: none;
   }
 }
 

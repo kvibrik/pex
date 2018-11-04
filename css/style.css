@@ -308,7 +308,8 @@ body {
   margin: 0 auto;
   box-sizing: border-box;
   max-width: 1180px;
-  padding: 0 10px; }
+  padding: 0 10px;
+  width: 100%; }
 
 .button {
   border: none;
@@ -338,6 +339,15 @@ body {
     margin-top: 50px; }
   .button-pink {
     margin: 15px 0; }
+  .button_small {
+    max-width: 135px;
+    height: 35px;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 18px;
+    font-size: 0.813rem;
+    font-weight: 400;
+    box-shadow: none; }
 
 .info-button {
   display: flex;
@@ -614,5 +624,26 @@ body {
     font-weight: 400;
     letter-spacing: -0.2px;
     line-height: 1.65; }
+
+.article {
+  width: 100%;
+  min-height: 670px;
+  background: url("/img/article.jpg") no-repeat 50% 50%;
+  background-size: cover;
+  position: relative; }
+  .article:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 0%, transparent 70%); }
+  .article__post {
+    position: relative;
+    z-index: 30;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; }
 
 /*# sourceMappingURL=style.css.map */
