@@ -5,24 +5,46 @@
   max-height: 495px;
   height: 100%;
   display: flex;
+  position: relative;
+  overflow: hidden;
+
+  &_right {
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 58%;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      background: url("/img/about_right.jpg") no-repeat;
+      background-size: cover;
+    }
+  }
 
   &__img {
     width: 100%;
-    flex: 0 0 39%;
-    background: url("/img/about.jpg") no-repeat;
     background-size: cover;
-    background-position: right 0px top 0px;
     height: 100%;
+
+    &_left {
+      background-position: right 0px top 0px;
+      background: url("/img/about.jpg") no-repeat;
+      flex: 0 0 39%;
+    }
   }
 
   &__article {
     flex: 0 0 41%;
     max-width: 660px;
-    margin-left: 100px;
     padding: 95px 0;
     color: $textGray;
     font-size: 0.938rem;
     font-weight: 400;
+
+    &_right {
+      margin-left: 100px;
+    }
   }
 
   &__title {

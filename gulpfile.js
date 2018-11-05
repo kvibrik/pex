@@ -50,7 +50,7 @@ var config = {
 
 gulp.task('html', function() {
     gulp.src(path.src.html)
-        .pipe(rigger())
+        .pipe(plumber())
         .pipe(nunjucks({
             searchPaths: ["src"]
         }))
