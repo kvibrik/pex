@@ -1,0 +1,16 @@
+@import "var";
+
+.contacts {
+  width: 100%;
+  background-color: $pink;
+  min-height: 460px;
+  font-size: 0.938rem;
+  color: $white;
+  font-weight: 400;
+  line-height: 1.733;
+
+  &__title {
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+}

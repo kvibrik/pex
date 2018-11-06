@@ -304,6 +304,10 @@ body {
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif; }
 
+h3 {
+  margin: 0;
+  padding: 0; }
+
 .container {
   margin: 0 auto;
   box-sizing: border-box;
@@ -681,5 +685,17 @@ body {
     font-size: 0.8125rem;
     font-weight: 400;
     padding: 0 15px; }
+
+.contacts {
+  width: 100%;
+  background-color: #e7526b;
+  min-height: 460px;
+  font-size: 0.938rem;
+  color: #fff;
+  font-weight: 400;
+  line-height: 1.733; }
+  .contacts__title {
+    text-transform: uppercase;
+    font-weight: 700; }
 
 /*# sourceMappingURL=style.css.map */

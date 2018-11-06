@@ -7,6 +7,10 @@ body {
   @include openSans;
 }
 
+h3 {
+  margin: 0;
+  padding: 0;
+}
 .container {
   @include center;
   @include box;
