@@ -690,12 +690,21 @@ h3 {
   width: 100%;
   background-color: #e7526b;
   min-height: 460px;
-  font-size: 0.938rem;
+  font-size: 0.9rem;
   color: #fff;
   font-weight: 400;
-  line-height: 1.733; }
+  line-height: 1.733;
+  padding: 75px 0; }
   .contacts__title {
     text-transform: uppercase;
     font-weight: 700; }
+  .contacts__text {
+    line-height: 1.67;
+    max-width: 400px;
+    padding-top: 10px; }
+  .contacts__mail {
+    color: #fff;
+    padding-top: 30px;
+    display: inline-block; }
 
 /*# sourceMappingURL=style.css.map */

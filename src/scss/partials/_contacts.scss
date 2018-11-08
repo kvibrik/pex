@@ -4,13 +4,26 @@
   width: 100%;
   background-color: $pink;
   min-height: 460px;
-  font-size: 0.938rem;
+  font-size: 0.9rem;
   color: $white;
   font-weight: 400;
   line-height: 1.733;
+  padding: 75px 0;
 
   &__title {
     text-transform: uppercase;
     font-weight: 700;
+  }
+
+  &__text {
+    line-height: 1.67;
+    max-width: 400px;
+    padding-top: 10px;
+  }
+
+  &__mail {
+    color: $white;
+    padding-top: 30px;
+    display: inline-block;
   }
 }
