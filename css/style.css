@@ -724,4 +724,50 @@ h3 {
     font-size: 0.75rem;
     padding: 45px 0 0; }
 
+@media (max-width: 950px) {
+  .header__top {
+    position: relative; }
+    .header__top::before {
+      position: absolute;
+      content: "";
+      top: 50%;
+      right: 0;
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+      -webkit-transform: translateY(-50%);
+              transform: translateY(-50%);
+      background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, white 0%, white 16%, rgba(255, 255, 255, 0) 16%), linear-gradient(0deg, rgba(255, 255, 255, 0) 42%, white 42%, white 58%, rgba(255, 255, 255, 0) 58%), linear-gradient(0deg, rgba(255, 255, 255, 0) 84%, white 84%, white 100%, rgba(255, 255, 255, 0) 100%); }
+  .header__menu {
+    display: none;
+    position: absolute;
+    right: -10px;
+    top: 0;
+    width: 50%;
+    flex-direction: column;
+    height: 35vh;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 30px 20px;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #2e3b4e;
+    z-index: 50; }
+    .header__menu::before {
+      content: "\2716";
+      color: #fff;
+      font-size: 2.5em;
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      cursor: pointer; }
+    .header__menu-item {
+      line-height: 3rem;
+      font-size: 1.5em;
+      text-align: center; }
+      .header__menu-item::after {
+        bottom: 0; }
+  .header__search {
+    margin-right: 6em; } }
+
 /*# sourceMappingURL=style.css.map */

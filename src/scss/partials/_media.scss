@@ -1,0 +1,87 @@
+@import 'var';
+
+@media (max-width: 950px) {
+
+  .header {
+    
+    &__top {
+      position: relative;
+
+      &::before {
+        position: absolute;
+        content: "";
+        top: 50%;
+        right: 0;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        transform: translateY(-50%);
+        background:
+        linear-gradient(
+          0deg,
+          rgba(white, 0) 0%,
+          rgba(white, 1) 0%,
+          rgba(white, 1) 16%,
+          rgba(white, 0) 16%
+        ),
+        linear-gradient(
+          0deg,
+          rgba(white, 0) 42%,
+          rgba(white, 1) 42%,
+          rgba(white, 1) 58%,
+          rgba(white, 0) 58%
+        ),
+        linear-gradient(
+          0deg,
+          rgba(white, 0) 84%,
+          rgba(white, 1) 84%,
+          rgba(white, 1) 100%,
+          rgba(white, 0) 100%
+        );
+      }
+    }
+
+    &__menu {
+      display: none;
+      position: absolute;
+      right: -10px;
+      top: 0;
+      width: 50%;
+      flex-direction: column;
+      height: 35vh;
+      justify-content: flex-start;
+      align-items: center;
+      padding: 30px 20px;
+      margin: 0;
+      @include box;
+      background-color: $blue;
+      z-index: 50;
+
+      &::before {
+        content: "\2716";
+        color: $white;
+        font-size: 2.5em;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        cursor: pointer;
+      }
+
+      &-item {
+        line-height: 3rem;
+        font-size: 1.5em;
+        text-align: center;
+        
+
+        &::after {
+          bottom: 0;
+        }
+      }
+    }
+
+    &__search {
+      margin-right: 6em;
+    }
+  }
+
+}
