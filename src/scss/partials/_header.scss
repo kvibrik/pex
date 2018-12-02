@@ -44,6 +44,10 @@
     line-height: 24px;
     margin: 15px;
 
+    &-close {
+      display: none;
+    }
+
     &-item {
       color: #fff;
       text-decoration: none;
@@ -94,6 +98,10 @@
       height: 14px;
       background-image: url("../img/fa-search.png");
     }
+  }
+
+  &__hamb {
+    display: none;
   }
 
   &__bottom {

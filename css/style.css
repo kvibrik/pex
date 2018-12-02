@@ -407,6 +407,8 @@ h3 {
     font-weight: 400;
     line-height: 24px;
     margin: 15px; }
+    .header__menu-close {
+      display: none; }
     .header__menu-item {
       color: #fff;
       text-decoration: none;
@@ -449,6 +451,8 @@ h3 {
       width: 14px;
       height: 14px;
       background-image: url("../img/fa-search.png"); }
+  .header__hamb {
+    display: none; }
   .header__bottom {
     max-width: 520px;
     width: 100%;
@@ -725,42 +729,47 @@ h3 {
     padding: 45px 0 0; }
 
 @media (max-width: 950px) {
+  .header__hamb {
+    display: flex;
+    position: absolute;
+    content: "";
+    top: 50%;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, white 0%, white 16%, rgba(255, 255, 255, 0) 16%), linear-gradient(0deg, rgba(255, 255, 255, 0) 42%, white 42%, white 58%, rgba(255, 255, 255, 0) 58%), linear-gradient(0deg, rgba(255, 255, 255, 0) 84%, white 84%, white 100%, rgba(255, 255, 255, 0) 100%); }
   .header__top {
     position: relative; }
-    .header__top::before {
-      position: absolute;
-      content: "";
-      top: 50%;
-      right: 0;
-      width: 40px;
-      height: 40px;
-      cursor: pointer;
-      -webkit-transform: translateY(-50%);
-              transform: translateY(-50%);
-      background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, white 0%, white 16%, rgba(255, 255, 255, 0) 16%), linear-gradient(0deg, rgba(255, 255, 255, 0) 42%, white 42%, white 58%, rgba(255, 255, 255, 0) 58%), linear-gradient(0deg, rgba(255, 255, 255, 0) 84%, white 84%, white 100%, rgba(255, 255, 255, 0) 100%); }
   .header__menu {
     display: none;
     position: absolute;
     right: -10px;
     top: 0;
-    width: 50%;
+    width: 60%;
     flex-direction: column;
-    height: 35vh;
-    justify-content: flex-start;
+    height: 50vh;
+    justify-content: space-between;
     align-items: center;
     padding: 30px 20px;
     margin: 0;
     box-sizing: border-box;
     background-color: #2e3b4e;
     z-index: 50; }
-    .header__menu::before {
-      content: "\2716";
+    .header__menu-close {
+      display: block;
       color: #fff;
       font-size: 2.5em;
       position: absolute;
       top: 15px;
       right: 15px;
-      cursor: pointer; }
+      cursor: pointer;
+      transition: .3s; }
+      .header__menu-close:hover {
+        -webkit-transform: rotate(90deg);
+                transform: rotate(90deg); }
     .header__menu-item {
       line-height: 3rem;
       font-size: 1.5em;
