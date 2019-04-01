@@ -522,7 +522,7 @@ h3 {
     left: 0;
     right: 0;
     bottom: 0;
-    background: url("/img/forest.jpg") no-repeat 50% 50%;
+    background: url("../img/forest.jpg") no-repeat 50% 50%;
     background-size: cover;
     opacity: 0.2;
     z-index: 20; }
@@ -562,7 +562,7 @@ h3 {
     top: 0;
     left: 0;
     bottom: 0;
-    background: url("/img/about.jpg") no-repeat;
+    background: url("../img/about.jpg") no-repeat;
     background-position: 0% 50%;
     background-size: cover; }
   .about_right::before {
@@ -572,7 +572,7 @@ h3 {
     top: 0;
     right: 0;
     bottom: 0;
-    background: url("/img/about_right.jpg") no-repeat;
+    background: url("../img/about_right.jpg") no-repeat;
     background-position: right 0% top 50%;
     background-size: cover; }
   .about__article {
@@ -606,7 +606,7 @@ h3 {
 .experience {
   width: 100%;
   min-height: 550px;
-  background: url("/img/experience.jpg") 50% 50% no-repeat;
+  background: url("../img/experience.jpg") 50% 50% no-repeat;
   background-size: cover;
   position: relative;
   z-index: 10;
@@ -654,7 +654,7 @@ h3 {
 .article {
   width: 100%;
   min-height: 670px;
-  background: url("/img/article.jpg") no-repeat 50% 50%;
+  background: url("../img/article.jpg") no-repeat 50% 50%;
   background-size: cover;
   position: relative;
   display: flex;
@@ -687,7 +687,7 @@ h3 {
     height: 45px;
     border-radius: 50%;
     box-sizing: border-box;
-    background: url("/img/author_photo.png") 50% 50% no-repeat;
+    background: url("../img/author_photo.png") 50% 50% no-repeat;
     background-size: cover; }
   .article__name {
     color: #fff;
